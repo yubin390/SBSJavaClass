@@ -1,0 +1,15 @@
+String 클래스 메소드
+
+String str = "AB".concat("CD").concat("EF"); == String str = (("AB".concat("CD")).concat("EF"));
+새로운 인스턴스가 2개가 만들어진다. (String은 수정이 안되므로 인스턴스가 생성된다.)
+
+덧셈은 기본적으로 concat이다. concat == +
+String birth = "<양>" + 7+'.'+16;
+<양>.concat(String.valueOf(7)).concat(String.valueOf('.')).concat(String.valueOf(7)); -> 인스턴스 6개이상 발생.
+이런 구조는 인스턴스를 많이 발생시키므로 비효율적이다.
+
+String brith = new StringBuilder ("<양>").append(7).append('.').append(16).toString(); ->StringBuilder 인스턴스 하나 생성후 저장만 함으로 인스턴스 2개
+-> new StringBuilder와 toString()
+StringBuilder : 버퍼저장소, append : 인스턴스 참조값 반환, toString() : 저장해놓았던 내용을 가지고 문자열 인스턴스 생성.
+
+StringBuilder append(String str), StringBuilder append(double d),,,,등 오버로딩 되어있음.

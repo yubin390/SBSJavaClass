@@ -1,0 +1,6 @@
+package Day15;
+
+public class Day15_1 {
+
+	String str = "age" +17;
+}

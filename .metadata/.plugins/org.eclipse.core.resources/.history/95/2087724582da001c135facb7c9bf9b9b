@@ -1,0 +1,8 @@
+String 클래스 메소드
+
+String str = "AB".concat("CD").concat("EF"); == String str = (("AB".concat("CD")).concat("EF"));
+새로운 인스턴스가 2개가 만들어진다. (String은 수정이 안되므로 인스턴스가 생성된다.
+
+덧셈은 기본적으로 concat이다.
+String birth = "<양>" + 7+'.'+16;
+<양>.concat(String.valueOf(7)).concat(String.valueOf('.')).concat(String.valueOf(7));

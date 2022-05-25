@@ -1,0 +1,20 @@
+package Day14;
+
+public class Person {
+	private int regiNum; //주민등록 번호
+	private int passNum; //여권 번호
+	
+	Person(int rnum, int pnum){
+		regiNum = rnum;
+		passNum = pnum;
+	}
+	
+	Person(int rnum){
+		regiNum = rnum;
+		passNum = 0;
+	}
+//	this 키워드를 이용한 다른 생성자의 호출 방법으로
+//	person(int rnum){ this(rnum, 0)} 도 가능하다.
+	
+	void showPersonalInfo() {}
+}

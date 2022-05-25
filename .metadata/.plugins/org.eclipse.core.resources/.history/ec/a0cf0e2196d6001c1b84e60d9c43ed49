@@ -1,0 +1,6 @@
+package Day14;
+
+public class AAA {
+	void simple(int p1, int p2) {}
+	void simple(int p1, double p2) {}
+}

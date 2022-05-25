@@ -1,0 +1,25 @@
+package Day14;
+
+public class AAA {
+	Person p;
+	
+	public AAA(int x, int y) {
+		p = new Person(x, y);
+	}
+	
+	public AAA() {}
+	
+	void md1() {p.showPersonalInfo();}
+	
+	void simple(int p1, int p2) {System.out.println("p2 :int");}
+	void simple(int p1, double p2) {System.out.println("p2 : double");}
+	
+	public static void main(String[] args) {
+		AAA a = new AAA();
+		a.simple(7, 'A'); //이런 경우 인자전달 전에 강제 형변환을 하는 것이 좋다. (int)'A' or (double) 'A'
+		//char형 변수는 double형보단 int형에 더가깝기 때문에 가까운 쪽으로 형변환이 이루어진다. -> 비추천 	
+		
+		String str3 = "RR".concat("AA");
+		System.out.println(str3);
+	}
+}

@@ -1,0 +1,7 @@
+package Day15;
+
+public class Day15_1 {
+
+	String se = String.valueOf(e);
+	System.out.println(se);
+}

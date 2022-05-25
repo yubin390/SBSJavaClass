@@ -1,0 +1,11 @@
+package Day15;
+
+public class Day15_1 {
+
+	public static void main(String[] args) {
+		String str22 = "age : " + 17; // str22.concat(String.valueOf(17))
+		System.out.println(str22);
+
+	}
+
+}

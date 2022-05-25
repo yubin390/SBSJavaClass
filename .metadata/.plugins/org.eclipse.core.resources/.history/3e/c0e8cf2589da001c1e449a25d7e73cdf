@@ -1,0 +1,13 @@
+package Day15;
+
+public class Problem {
+
+	public static void main(String[] args) {
+		String str = "990925-1012999";
+		System.out.println(str.substring(0,6)+" "+str.substring(7,13));
+		
+		String sb = new StringBuilder("9990925").append(" ").append(1012999).toString();
+		System.out.println(sb.toString());
+		
+	}
+}

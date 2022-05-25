@@ -1,0 +1,7 @@
+package Day15;
+
+public class Day15_1 {
+
+	String str = "age" +String.valueOf(17);
+	System.out.println(str);
+}

@@ -1,0 +1,18 @@
+package Day15;
+
+public class Day15_1 {
+
+	public static void main(String[] args) {
+		String str22 = "age : " + 17; // str22.concat(String.valueOf(17))
+		System.out.println(str22);
+//		String birth1 = "<¾ç>" + 7+'.'+16;
+//		System.out.println(birth1);
+		
+		String birth = new StringBuilder ("<¾ç>").append(7).append('.').append(16).toString();
+		System.out.println(birth.toString());
+		
+		StringBuilder stub = new StringBuilder("123");
+		System.out.println(stub.toString());
+	}
+
+}

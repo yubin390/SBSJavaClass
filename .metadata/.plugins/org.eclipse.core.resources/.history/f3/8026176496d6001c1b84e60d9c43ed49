@@ -1,0 +1,11 @@
+package Day14;
+
+public class AAA {
+	void simple(int p1, int p2) {System.out.println("p2 :int");}
+	void simple(int p1, double p2) {System.out.println("p2 : double");}
+	
+	public static void main(String[] args) {
+		AAA a = new AAA();
+		a.simple(7, 'A'); //이런 경우 인자전달 전에 강제 형변환을 하는 것이 좋다. (int)'A' or (double) 'A'
+	}
+}
